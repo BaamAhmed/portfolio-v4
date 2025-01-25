@@ -23,7 +23,7 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Terminal className="h-6 w-6" />
-            <span className="font-bold">Bassam Ahmed</span>
+            <span className="font-bold">Bassam A.</span>
           </Link>
           <div className="hidden md:block">
             {navItems.map((item) => (

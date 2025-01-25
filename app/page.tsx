@@ -1,4 +1,4 @@
-import { Terminal, Mail, Github, Linkedin } from "lucide-react";
+import { Terminal, Mail, Github, Linkedin, File } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import InteractiveBackground from "@/components/InteractiveBackground";
 
@@ -9,26 +9,44 @@ export default function Page() {
       {/* Hero Section */}
       <header className="container mx-auto px-4 py-24">
         <div className="flex items-center gap-4">
-          <Terminal className="h-6 w-6" />
-          <h1 className="text-xl font-bold tracking-tight">Bassam Ahmed</h1>
+          <Terminal className="h-8 w-8" />
+          <h1 className="text-3xl font-bold tracking-tight">Bassam Ahmed</h1>
         </div>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          Software engineer specializing in building exceptional digital
-          experiences. Currently focused on building accessible, human-centered
-          products.
+          (Human) software engineer specializing in building exceptional digital
+          experiences. Currently focused on exploring machine learning
+          fundamentals and agentic AI workflows
         </p>
         <div className="mt-8 flex gap-4">
-          <Button variant="outline" size="sm">
-            <Mail className="mr-2 h-4 w-4" />
-            Email
+          <Button variant="outline" size="sm" asChild>
+            <a
+              href="https://aurparhobucket.s3.ap-south-1.amazonaws.com/Bassam_Ahmed_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <File className="mr-2 h-4 w-4" />
+              Resume
+            </a>
           </Button>
-          <Button variant="outline" size="sm">
-            <Github className="mr-2 h-4 w-4" />
-            GitHub
+          <Button variant="outline" size="sm" asChild>
+            <a
+              href="https://github.com/BaamAhmed"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="mr-2 h-4 w-4" />
+              GitHub
+            </a>
           </Button>
-          <Button variant="outline" size="sm">
-            <Linkedin className="mr-2 h-4 w-4" />
-            LinkedIn
+          <Button variant="outline" size="sm" asChild>
+            <a
+              href="https://www.linkedin.com/in/baamahmed/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin className="mr-2 h-4 w-4" />
+              LinkedIn
+            </a>
           </Button>
         </div>
       </header>
@@ -41,20 +59,42 @@ export default function Page() {
             Featured Work
           </h2>
           <div className="space-y-4">
-            <div className="group rounded-md border bg-card p-4 transition-colors hover:bg-accent">
-              <h3 className="font-medium">Project Alpha</h3>
+            <a
+              href="https://www.4040.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block text-left rounded-md border bg-card p-4 transition-colors hover:bg-accent"
+            >
+              <h3 className="font-medium">
+                4040 | Smarter Pricing For Sports Facilities
+              </h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                A revolutionary app that transforms how we interact with
-                technology. Built with React, Node.js, and GraphQL.
+                A "weekends-and-evenings" project that I've co-founded with a
+                friend to help sports facilities optimize their pricing
+                strategies. We do everything from data collection to building
+                machine learning models to predict demand and suggest optimal
+                pricing strategies.
               </p>
-            </div>
-            <div className="group rounded-md border bg-card p-4 transition-colors hover:bg-accent">
-              <h3 className="font-medium">Project Beta</h3>
+            </a>
+            <a
+              href="https://www.theverge.com/2024/5/16/24158246/sony-playstation-pc-overlay-hands-on"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block text-left rounded-md border bg-card p-4 transition-colors hover:bg-accent"
+            >
+              <h3 className="font-medium">
+                My Work at PlayStation Reached Millions of Users
+              </h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                An innovative platform that connects people in meaningful ways.
-                Powered by Next.js and PostgreSQL.
+                (Links to a Verge article about the launch of PlayStation
+                Overlay on PC)
+                <br></br>At PlayStation, I worked on the UI framework for
+                PC-based applications, and was ecstatic to see that my work was
+                shipped to millions of users in the form of the in-game
+                PlayStation overlay first introduced in Ghost of Tsushima (best
+                game ever).
               </p>
-            </div>
+            </a>
           </div>
         </section>
 
@@ -64,9 +104,11 @@ export default function Page() {
           <section className="rounded-lg border bg-card p-6 shadow-sm">
             <h2 className="text-lg font-semibold tracking-tight">About</h2>
             <p className="mt-4 text-sm text-muted-foreground">
-              I build accessible, inclusive products and digital experiences for
-              the web. With 5+ years of experience in frontend development, I
-              enjoy turning complex problems into simple, beautiful solutions.
+              I'm a 3rd year Computer Science student at the University of
+              Waterloo, specializing in AI. I've previously worked at both
+              high-growth startups like Stably (YC W22) and big-tech companies
+              like PlayStation. I thrive in fast-paced and challenging
+              environments, and pick up new tech stacks instantly.
             </p>
           </section>
 
@@ -76,13 +118,16 @@ export default function Page() {
             <div className="mt-4 flex flex-wrap gap-2">
               {[
                 "TypeScript",
+                "Python",
+                "C++",
                 "React",
                 "Next.js",
                 "Node.js",
-                "GraphQL",
                 "PostgreSQL",
                 "Tailwind",
                 "AWS",
+                "Docker",
+                "Django",
               ].map((skill) => (
                 <span
                   key={skill}

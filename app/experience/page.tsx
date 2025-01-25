@@ -10,7 +10,7 @@ export default function ExperiencePage() {
           <h1 className="text-xl font-bold tracking-tight">Experience</h1>
         </div>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          My professional journey in software development and engineering.
+          My professional journey in software development and engineering
         </p>
       </header>
 
@@ -66,39 +66,48 @@ export default function ExperiencePage() {
 
 const experiences = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Solutions Inc.",
-    period: "2021 - Present",
+    title: "Software Engineer Intern",
+    company: "Stably (YC W22)",
+    period: "Oct 2024 - Present",
     location: "San Francisco, CA",
     responsibilities: [
-      "Led the development of a microservices architecture that improved system scalability by 300%",
-      "Mentored junior developers and conducted code reviews to maintain code quality",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
+      "Reduced automated test runtime by 50% by implementing ability to store and reuse authentication state between tests, significantly cutting cloud infrastructure and AI costs",
+      "Enhanced test reliability by optimizing multi-modal AI agents for visual and DOM-related assertion handling",
+      "Optimized company's flagship no-code test editor by resolving critical bugs and implementing intuitive UI/UX patterns, streamlining the core product experience",
+      "Drove product innovation by executing across multiple disciplines, including UI/UX design, full-stack development and system architecture, in a high-velocity startup environment",
     ],
-    technologies: ["React", "Node.js", "AWS", "Docker", "Kubernetes"],
+    technologies: ["React", "Node.js", "AWS", "Docker", "PrismaDB", "tRPC"],
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Innovations Ltd",
-    period: "2019 - 2021",
-    location: "New York, NY",
+    title: "Software Development Intern",
+    company: "PlayStation (Sony Interactive Entertainment)",
+    period: "Jan 2024 - Apr 2024",
+    location: "Waterloo, ON",
     responsibilities: [
-      "Developed and maintained multiple client-facing web applications",
-      "Optimized database queries resulting in 40% faster load times",
-      "Collaborated with design team to implement responsive UI/UX improvements",
+      "Resolved image rendering issues by modifying the React Native Windows Image component to more efficiently rasterize SVG assets, improving loading times and image resolutions across all PlayStation PC games and apps",
+      "Contributed to key updates of TypeScript-based UI framework used for building PlayStation PC applications, impacting user experience for millions of PlayStation players",
+      "Improved testing efficiency by implementing automated integration testing via Jest for a TypeScript module",
+      "Led technical presentations on UI framework improvements, driving adoption across multiple teams",
     ],
-    technologies: ["Vue.js", "Python", "PostgreSQL", "Redis"],
+    technologies: ["React Native Windows", "WinUI", "Jest", "TypeScript"],
   },
   {
-    title: "Software Developer",
-    company: "StartUp Co",
-    period: "2017 - 2019",
-    location: "Boston, MA",
+    title: "Software Engineer Intern",
+    company: "Microart Services Inc.",
+    period: "May 2023 - Aug 2023",
+    location: "Markham, ON",
     responsibilities: [
-      "Built RESTful APIs for mobile and web applications",
-      "Implemented real-time features using WebSocket technology",
-      "Contributed to open-source projects and internal tools",
+      "Developed an end-to-end, comprehensive image-search functionality in React Native project, enabling users to take a photo of a wine label to retrieve matching wines from an internal relational database",
+      "Integrated OCR capabilities using Google Cloud Vision API, achieving 90% accuracy in wine label recognition",
+      "Introduced PostgreSQL full-text search with automated indexing, boosting search speed by 30%",
+      "Debugged app’s interaction with physical BLE (Bluetooth Low Energy) devices to allow for sensor monitoring",
     ],
-    technologies: ["JavaScript", "Express.js", "MongoDB", "Socket.io"],
+    technologies: [
+      "React Native",
+      "Google Cloud",
+      "Firebase",
+      "Supabase",
+      "PostgreSQL",
+    ],
   },
 ];
