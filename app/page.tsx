@@ -121,6 +121,7 @@ export default function Page() {
                 "Python",
                 "C++",
                 "React",
+                "React Native",
                 "Next.js",
                 "Node.js",
                 "PostgreSQL",
@@ -128,6 +129,7 @@ export default function Page() {
                 "AWS",
                 "Docker",
                 "Django",
+                "Bash",
               ].map((skill) => (
                 <span
                   key={skill}

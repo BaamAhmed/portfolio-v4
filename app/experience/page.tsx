@@ -31,8 +31,15 @@ export default function ExperiencePage() {
                       <span>{experience.period}</span>
                     </div>
                   </div>
-                  <div className="rounded-md border bg-muted px-2 py-1 text-sm">
-                    {experience.location}
+                  <div className="flex gap-2">
+                    {experience.current && (
+                      <div className="rounded-md border border-green-500 text-green-500 px-2 py-1 text-sm">
+                        Current
+                      </div>
+                    )}
+                    <div className="rounded-md border bg-muted px-2 py-1 text-sm">
+                      {experience.location}
+                    </div>
                   </div>
                 </div>
                 <div className="mt-4 space-y-2">
@@ -70,6 +77,7 @@ const experiences = [
     company: "Stably (YC W22)",
     period: "Oct 2024 - Present",
     location: "San Francisco, CA",
+    current: true,
     responsibilities: [
       "Reduced automated test runtime by 50% by implementing ability to store and reuse authentication state between tests, significantly cutting cloud infrastructure and AI costs",
       "Enhanced test reliability by optimizing multi-modal AI agents for visual and DOM-related assertion handling",
